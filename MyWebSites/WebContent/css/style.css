@@ -1,0 +1,234 @@
+u1{
+	margin-bottom: 20px;
+}
+li{
+	display: inline;
+	margin:5px;
+	size:200%;
+}
+/*椤电湁鐖跺厓绱犵浉鍏宠缃�*/
+#header_f{
+	height:80px;
+	overflow:hidden;
+  background-color:rgba(153,204,204,0.5);
+  opacity:10%;
+}
+/*椤电湁logo div鐩稿叧璁剧疆*/
+#header_s1{
+	text-content: left;
+	margin-left: 0px;
+	margin-top: 1px;
+}
+/*椤电湁瀵艰埅鏍忕殑鐩稿叧璁剧疆*/
+#header_s2{
+	align-content: center;
+	text-align: center;
+	color:white;
+	
+	margin-left: 20%;
+	margin-right: 5%;
+	margin-top: 16px;
+	}
+	/*瀵艰埅鏍忓瓧浣撶殑鐩稿叧璁剧疆*/
+	#a1,#a2,#a3,#a4
+	{
+		font-size:30px;
+		color:white;
+		font-family:youyuan;
+		}
+	/*椤佃剼鍏冪礌鍐卲鍏冪礌鐩稿叧璁剧疆*/
+	#p_footer{
+		text-align: center;
+		color:#D5D5D5;
+		font-size: 1.1em;
+		font-family: yuanti;
+		}
+	
+	/*椤电湁涓婁袱鎻愪氦鎸夐挳鐨勭浉鍏宠缃�*/
+	#b1,#b2,#welcome,#logout{
+		text-align: center;
+		font-family: youyuan;
+		color:white;
+		}
+
+#header_s3{
+	text-align: right;
+	margin-top: 10px;
+	font-family:fantasy;
+	margin-right: 1%;
+	margin-top: 20px;
+}
+body{
+	background-image:url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	position:relative;
+		}
+#main_body{
+	margin-top:80px;
+    position:relative;
+    margin-bottom:0px;
+	height:1000px;
+	width:1366;
+	
+	overflow:hidden;
+	}
+/*椤佃剼鑳屾櫙璁剧疆	*/
+footer{
+		background-color:rgba(204,255,51,0.2);
+		}
+		/*涓讳綋瀛愬厓绱犵殑鐩稿叧璁剧疆*/
+	#main_body_d1{
+		margin-top: 12px;
+		margin-left: 12px;
+		width:258px;
+		height:258px;
+		position:fixed;
+		background-color: rgba(255,255,255,0.3);
+		}
+		#main_body_d2{
+		margin-top: 277px;
+		margin-left: 12px;
+		width:258px;
+		height:258px;
+		position:fixed;
+	
+		background-color: rgba(255,255,255,0.3);
+		}
+		#main_body_d3{
+		margin-left:277px;
+		margin-top: 12px;
+		width:153px;
+		height:153px;
+		position:fixed;
+		font-size:100px;
+		text-align: center;
+		align-content: center;
+		
+		}
+	
+		#main_body_d4{
+		margin-top: 12px;
+		margin-left:437px;
+		width:153px;
+		height:153px;
+		font-size:100px;
+		text-align: center;
+		position:fixed;
+		
+		}
+		#main_body_d5{
+			margin-top: 12px;
+		margin-left:1078px;
+		width:258px;
+		height:258px;
+		position:fixed;
+		
+		background-color: rgba(255,255,255,0.3);
+		}
+		#main_body_d6{
+		margin-top: 277px;
+		margin-left:1078px;
+		width:258px;
+		height:258px;
+		position:fixed;
+		
+		background-color: rgba(255,255,255,0.3);
+		}
+		
+		#main_body_d7{
+		margin-top: 12px;
+		margin-left:597px;
+		width:153px;
+		height:153px;
+		position:fixed;
+		font-size:100px;
+		text-align: center;
+		
+		}
+		#main_body_d8{
+		margin-top: 12px;
+		margin-left:757px;
+		width:153px;
+		height:153px;
+		font-size:100px;
+		text-align: center;
+		position:fixed;
+		
+		}
+		#main_body_d9{
+		margin-top: 12px;
+		margin-left:917px;
+		width:153px;
+		height:153px;
+		font-size:100px;
+		text-align: center;
+		position:fixed;
+		
+		}
+		#main_body_d10{
+		margin-top: 172px;
+		margin-left:277px;
+		width:393px;
+		height:363px;
+		position:fixed;
+		background-color: rgba(255,255,255,0.3);
+		}
+		
+		#main_body_d11{
+		margin-top: 172px;
+		margin-left:677px;
+		width:393px;
+		height:363px;
+		position:fixed;
+		background-color: rgba(255,255,255,0.3);
+		}
+		#main_body_d12{
+		margin-top: 112px;
+		margin-left:1017px;
+		font-size: 30px;
+		position:fixed;
+		background-color: rgba(255,255,255,0);
+		}
+.footer_f{
+	height:55px;
+}
+/*鏃ユ湡鏄剧ず鐩稿叧璁剧疆*/
+#header_s3_span1{
+	font-size: 15px;
+	font-family: arial;
+	margin-right: 10%;
+	color:white;
+}
+#header_s3_span2{
+	font-size: 15px;
+	font-family: yuanyou;
+	
+	color:white;
+}
+/*鏄剧ず鏃堕棿鐨刣iv鏍峰紡璁剧疆*/
+.monday{
+	background-color: rgba(247,20,9,0.7);
+}
+.tuesday{
+	background-color: rgba(247,193,9,0.7);
+}
+.wednesday{
+	background-color: rgba(27,247,9,0.7);
+}
+.thursday{
+	background-color: rgba(9,247,190,0.7);
+}
+.friday{
+	background-color: rgba(9,27,247,0.7);
+}
+.saturday{
+	background-color: rgba(244,9,247,0.7);
+}
+.sunday{
+	background-color: rgba(247,9,52,0.7);
+}
+
+#logout:hover{
+		cursor:pointer;
+	}

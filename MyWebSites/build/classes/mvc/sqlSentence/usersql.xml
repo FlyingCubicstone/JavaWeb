@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTDMapper 3.0//EN"
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <mapper namespace="mvc.dao.SqlMapper">
+ <!-- 配置SQL语句处 -->
+ <select id="findAll" resultType="mvc.m.User">
+ 	select* from siteuserinfo
+ </select>
+ <select id="findByName" resultType="mvc.m.User" parameterType="string">
+ 	select* from siteuserinfo where username=#{name}
+ </select>
+ <update id="save" parameterType="mvc.m.User">
+ 	insert into siteuserinfo (id,username,password) values(ID_SEQ.NEXTVAL,#{username},#{password})
+ </update>
+ <update id="createtoken" parameterType="mvc.m.User">
+ 	update siteuserinfo set token=#{token} where username=#{username}
+ </update>
+ <update id="countvisitor" parameterType="mvc.m.Visitor">
+ 	insert into count_user(username,ip,logintime) values(#{username},#{ip},#{logintime})
+ </update>
+ <update id="deltoken" parameterType="string">
+ 	update siteuserinfo set token='' where username=#{name}
+ </update>
+ <select id="countall" resultType="integer">
+ 	select count(username) from count_user
+ </select>
+ </mapper>

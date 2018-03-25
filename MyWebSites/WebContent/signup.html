@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<style>
+			body{
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-image: url("img/login.jpg");
+			}
+			#body_div1{
+				position:absolute;
+				left:40%;
+				margin-top:15%;
+				width:400px;
+				
+			}
+			#body_div1_div1{
+				color:rgba(0,255,255,1);
+				text-align: center;
+				font-family: yuanyou;
+				
+				background-color: rgba(255,255,255,0.5);
+				padding-bottom:15px;
+				padding-top: 15px;
+			}
+			#body_div1_div2{
+				margin:0px;
+				text-align: center;
+				color:white;
+				background-color: rgba(0,255,255,0.5);
+				padding-top:5px;
+				padding-bottom: 5px;
+				font-family:"agency fb";
+				font-size: 1.5em;
+			}
+			
+		</style>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script>
+		$("#back").click(function(){
+			window.location.href="index.html";
+		})
+		$(function(){
+			$("#sbmtbtn").click(function(){
+				var name=$("#name").val().trim();
+				var password=$("#password").val().trim();
+				
+				$.ajax({
+					type:"post",
+					url:"http://localhost:8080/MyWebSites/m/signup.do",
+					
+					data:{"name":name,"pwd":password},
+					dataType:"json",
+					success:function(result){
+						alert(result.msg);
+					}
+				
+			});
+			})
+		})
+		$(function(){
+			$("#back").click(function(){
+				window.location.href="index.html";
+				
+			})
+			$("#snpbtn").click(function(){
+				var name=$("#name").val().trim();
+				var password=$("#password").val().trim();
+				$("#span_username").html("");
+				$("#span_password").html("");
+				$.ajax({
+					type:"post",
+					url:"http://localhost:8080/MyWebSites/m/signup.do",
+					data:{"name":name,"pwd":password},
+					dataType:"json",
+					success:function(result){
+						if(result.status==0){
+							$("#span_username").html(result.msg);
+						}if(result.status==1){
+							$("#span_username").html(result.msg);
+							window.location.href="signupjump.jsp";
+						}
+					}
+				});
+			})
+		})
+		</script>
+	</head>
+	<body >
+		<div id="body_div1">
+			<div id="body_div1_div2">welcome</div>
+			<div id="body_div1_div1">
+				<p>
+				<label>账号：</label><input type="text" id="name"></input>
+				<span id="span_username" ></span>
+				</p>
+				<p>
+				<label>密码：</label><input type="password" id="password"></input>
+				<span id="span_password" ></span>
+				</p>
+				
+				<p>
+				<input type="submit" value="注册" id="snpbtn"/>
+				<input type="button" value="返回" id="back"/>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

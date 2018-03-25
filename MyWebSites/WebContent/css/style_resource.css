@@ -1,0 +1,91 @@
+u1{
+	margin-bottom: 20px;
+}
+li{
+	display: inline;
+	margin:5px;
+	size:200%;
+}
+/*页眉父元素相关设置*/
+#header_f{
+	height:80px;
+	overflow:hidden;
+  background-color:rgba(153,204,204,0.5);
+  opacity:10%;
+}
+/*页眉logo div相关设置*/
+#header_s1{
+	text-content: left;
+	margin-left: 0px;
+	margin-top: 1px;
+}
+/*页眉导航栏的相关设置*/
+#header_s2{
+	align-content: center;
+	text-align: center;
+	color:white;
+	
+	margin-left: 20%;
+	margin-right: 5%;
+	margin-top: 16px;
+	}
+	/*导航栏字体的相关设置*/
+	#a1,#a2,#a3,#a4
+	{
+		font-size:30px;
+		color:white;
+		font-family:youyuan;
+		}
+	/*页脚元素内p元素相关设置*/
+	#p_footer{
+		text-align: center;
+		color:#D5D5D5;
+		font-size: 1.1em;
+		font-family: yuanti;
+		}
+	
+	/*页眉上两提交按钮的相关设置*/
+	#b1,#b2{
+		text-align: center;
+		font-family: youyuan;
+		color:white;
+		}
+	
+#header_s3{
+	text-align: right;
+	margin-top: 10px;
+	font-family:fantasy;
+	margin-right: 1%;
+	margin-top: 20px;
+}
+#header_s3_span1{
+	margin-right: 20px;
+	font-family: yuanyou;
+	color:white;
+}
+#header_s3_span2{
+	margin-right: 20px;
+	font-family: yuanyou;
+	color:white;
+}
+body{
+	background-image:url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	position:relative;
+		}
+#main_body{
+	margin-top:80px;
+    position:relative;
+    margin-bottom:0px;
+	height:1000px;
+	width:1366;
+	
+	overflow:hidden;
+	}
+/*页脚背景设置	*/
+footer{
+		background-color:rgba(204,255,51,0.2);
+		}
+		/*主体子元素的相关设置*/
+	

@@ -1,0 +1,24 @@
+package mvc.m;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SrcServiceImp implements SrcService{
+	public ResultState checkUname(String name) {
+		ResultState state=new ResultState();
+		if(name=="anonymity") {
+			state.setStatus(0);
+			state.setMsg("Î´µÇÂ¼");
+			return state;
+		}
+		if(name=="lizhiqiang") {
+			state.setStatus(1);
+			state.setMsg("¹ÜÀíÔ±µÇÂ¼");
+			return state;
+		}
+		else
+			state.setStatus(2);
+			state.setMsg("ÒÑµÇÂ¼");
+		return state;
+	}
+}
